@@ -1,15 +1,12 @@
 /* Site variables - change these to whatever you want */
-var slide_delay = 5; // this is in seconds;
+var slide_delay = 3; // this is in seconds;
 
 /* Edit below this line with caution */
 
 var current_slide = 1,
     slide_interval;
 
-function setActiveNav(){
-    var path = window.location.pathname.split('/'),
-        page = path[path.length-1].replace('.html','');
-
+function setActiveNav(page){
     if( page !== '' ){
         $('nav li.active').removeClass('active');
         $('nav li a[href*=' + page + ']').parent().addClass('active');
@@ -33,13 +30,16 @@ function setSlideInterval(){
 }
 
  $(function() {
+    var path = window.location.pathname.split('/'),
+        page = path[path.length-1].replace('.html','');
+
     // make the logo clickable
     $('#logo').click(function(){
         window.location = '.';
     });
 
     // set up the active state of the nav
-    setActiveNav();
+    setActiveNav(page);
 
     // set up nav links
     $('nav li').click(function(){
@@ -48,18 +48,28 @@ function setSlideInterval(){
 
     // image slider
 
-        // click on a button
-        $('#image-slider .image-slider-button').click(function(){
-            changeSlide($(this).index() + 1);
-        });
+        // only do this on index
+        if(page === '' || page === 'index'){
 
-        // start the interval
-        setSlideInterval();
+            // click on a button
+            $('#image-slider .image-slider-button').click(function(){
+                changeSlide($(this).index() + 1);
+            });
 
-        $('#image-slider').mouseover(function(){
-            clearInterval(slide_interval);
-        })
-        .mouseout(function(){
+            // start the interval
             setSlideInterval();
-        });
+
+            $('#image-slider').mouseover(function(){
+                clearInterval(slide_interval);
+            })
+            .mouseout(function(){
+                setSlideInterval();
+            });
+
+            // preload images
+            for(var i=1; i<=$('#image-slider .image-slider-button').length; i++){
+                $('#preload').load('img/slider/' + i + '.png');
+            }
+        } // if
+
  });
