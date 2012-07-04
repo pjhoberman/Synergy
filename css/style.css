@@ -305,7 +305,7 @@ body {
 }
 
 header {
-  width:1186px;
+  width:1190px;
   margin: 50px 0 10px;
   /*margin: 0 auto;*/
   font-size: 10px;
@@ -319,7 +319,7 @@ header {
 }
 
 #logo {
-
+  cursor: pointer;
 }
   #logo span {
     text-transform: uppercase;
@@ -341,6 +341,23 @@ nav {
 nav li {
   color: #002A54;
   margin: 25px 0;
+  padding: 5px;
+  width: 150px;
+  cursor: pointer;
+}
+
+nav li:hover,
+nav li.active {
+  background-color: #002954;
+  color: white;
+}
+
+nav li a,
+nav li a:visited,
+nav li a:hover,
+nav li a:visited:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 #infobox, #main {
@@ -363,9 +380,9 @@ nav li {
 
 
 #main {
-  width: 758px;
+  width: 710px;
   float: left;
-  margin-left: 25px;
+  margin-left: 75px;
   padding: 25px;
 }
   #main .content {
@@ -376,6 +393,25 @@ nav li {
     text-align: justify;
     font-size: 14px;
   }
+
+  #main #image-slider {
+
+  }
+    #main #image-slider .image-slider-buttons {
+      float: right;
+    }
+
+      #main #image-slider .image-slider-button {
+        height: 10px;
+        width: 10px;
+        background-color: white;
+        border: 1px solid #666;
+        float: left;
+      }
+
+      #main #image-slider .image-slider-button.active {
+        background-color: #002954;
+      }
 
 footer {
   height: 50px;
