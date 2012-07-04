@@ -11,6 +11,10 @@
  */
 
 
+/*
+ * Synergy styles start below, around line 300
+*/
+
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -290,4 +294,90 @@ td { vertical-align: top; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
+}
+
+
+/* SYNERGY STYLES START HERE */
+
+body {
+  background: url("../img/bg2.png"); /* Todo: still need a legit bg */
+  color: #002A54;
+}
+
+header {
+  width:1186px;
+  margin: 50px 0 10px;
+  /*margin: 0 auto;*/
+  font-size: 10px;
+  text-align: right;
+}
+
+#left {
+  width: 280px;
+  float: left;
+  margin: 50px 0 0 75px;
+}
+
+#logo {
+
+}
+  #logo span {
+    text-transform: uppercase;
+    font-size: 48px;
+    text-shadow: 2px 2px 1px #ffffff;
+    filter: dropshadow(color=#ffffff, offx=2, offy=2);
+    font-family: serif;
+    line-height: 32px;
+  }
+
+  #logo span.line2 {
+    font-size: 21px;
+  }
+
+nav {
+
+}
+
+nav li {
+  color: #002A54;
+  margin: 25px 0;
+}
+
+#infobox, #main {
+  border: 1px solid white;
+  background-color: #BDAC9A;
+  background-image: url("../img/bg_infobox.png");
+  -webkit-box-shadow:  10px 10px 7px 2px rgba(0, 0, 0, .2);
+  box-shadow:  10px 10px 7px 2px rgba(0, 0, 0, .2);
+}
+  #infobox .info-header {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  #infobox li {
+    text-transform: uppercase;
+    list-style: none;
+  }
+
+
+
+#main {
+  width: 758px;
+  float: left;
+  margin-left: 25px;
+  padding: 25px;
+}
+  #main .content {
+    background-color: white;
+    padding: 15px;
+    margin: 50px;
+    color: black;
+    text-align: justify;
+    font-size: 14px;
+  }
+
+footer {
+  height: 50px;
+  clear: both;
 }
