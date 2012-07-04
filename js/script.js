@@ -2,7 +2,10 @@
 
 */
 
+function setActiveNav(){
+    console.log(window.location);
+}
 
-
-
-
+ $(function() {
+    setActiveNav();
+ });
