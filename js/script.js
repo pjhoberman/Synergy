@@ -10,8 +10,10 @@ function setActiveNav(){
     var path = window.location.pathname.split('/'),
         page = path[path.length-1].replace('.html','');
 
-    $('nav li.active').removeClass('active');
-    $('nav li a[href*=' + page + ']').parent().addClass('active');
+    if( page !== '' ){
+        $('nav li.active').removeClass('active');
+        $('nav li a[href*=' + page + ']').parent().addClass('active');
+    }
 }
 
 function changeSlide(n){
@@ -33,7 +35,7 @@ function setSlideInterval(){
  $(function() {
     // make the logo clickable
     $('#logo').click(function(){
-        window.location = '/';
+        window.location = '.';
     });
 
     // set up the active state of the nav
