@@ -300,7 +300,7 @@ td { vertical-align: top; }
 /* SYNERGY STYLES START HERE */
 
 body {
-  background: url("../img/bg2.png"); /* Todo: still need a legit bg */
+  background: url("../img/bg.jpg");
   color: #002A54;
 }
 
@@ -363,7 +363,7 @@ nav li a:visited:hover {
 #infobox, #main {
   border: 1px solid white;
   background-color: #BDAC9A;
-  background-image: url("../img/bg_infobox.png");
+  background-image: url("../img/bg_content.jpg");
   -webkit-box-shadow:  10px 10px 7px 2px rgba(0, 0, 0, .2);
   box-shadow:  10px 10px 7px 2px rgba(0, 0, 0, .2);
 }
@@ -402,16 +402,44 @@ nav li a:visited:hover {
     }
 
       #main #image-slider .image-slider-button {
-        height: 10px;
-        width: 10px;
-        background-color: white;
-        border: 1px solid #666;
+        height: 20px;
+        width: 20px;
         float: left;
+        background: url("../img/slider_btn_off.png") no-repeat;
+        cursor: pointer;
       }
 
       #main #image-slider .image-slider-button.active {
-        background-color: #002954;
+        background: url("../img/slider_btn_active.png") no-repeat;
       }
+
+.big-header, .header {display: block;}
+
+.big-header {
+  font-size: 35px;
+  font-style: italic;
+  color: #002a53;
+}
+
+.header {
+  color: #002a53;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+p {
+  color: black;
+  font-size: 13px;
+}
+
+.read-more {
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+span.read-more + p {display: none;}
 
 footer {
   height: 50px;

@@ -72,4 +72,10 @@ function setSlideInterval(){
             }
         } // if
 
+    // read more -- if more than one <p>, maybe a for="" type relationship between the span and the p's
+    $('.read-more').click(function(){
+        $(this).parent().next('p').slideDown();
+        $(this).remove();
+    });
+
  });
