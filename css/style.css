@@ -445,3 +445,11 @@ footer {
   height: 50px;
   clear: both;
 }
+
+#intellipanel-info {
+
+}
+
+  #intellipanel-info ul{
+    display: none;
+  }

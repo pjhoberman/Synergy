@@ -78,4 +78,10 @@ function setSlideInterval(){
         $(this).remove();
     });
 
+    // intellipanel info
+    $('#intellipanel-table td').click(function(){
+        $('#intellipanel-info ul').hide();
+        $('#intellipanel-info ul#' + $(this).attr('data-info')).show();
+    });
+
  });
