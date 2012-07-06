@@ -19,7 +19,7 @@ function changeSlide(n){
     }
 
     current_slide = n;
-    $('#image-slider img').attr('src', 'img/slider/' + n + '.png');
+    $('#image-slider img').attr('src', 'img/slider/' + n + '.jpg');
     $('#image-slider .image-slider-button').removeClass('active');
     $('#image-slider .image-slider-button:eq(' + (n-1) + ')').addClass('active');
 }
@@ -68,7 +68,7 @@ function setSlideInterval(){
 
             // preload images
             for(var i=1; i<=$('#image-slider .image-slider-button').length; i++){
-                $('#preload').load('img/slider/' + i + '.png');
+                $('#preload').load('img/slider/' + i + '.jpg');
             }
         } // if
 
