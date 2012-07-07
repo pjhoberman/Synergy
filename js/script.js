@@ -84,4 +84,37 @@ function setSlideInterval(){
         $('#intellipanel-info ul#' + $(this).attr('data-info')).show();
     });
 
+    // coverage map
+    $('area').mouseover(function(){
+        var state = $(this).attr('href').replace('#','');
+        $('.state').hide();
+        if(!$('img#' + state).length){
+            var a = $(this).attr('coords').split(','),
+                top = left = 10000;
+
+            for( var i=0; i<a.length; i++ ){
+                if( i % 2 ){
+                    if( a[i] < top ){
+                        top = a[i];
+                    }
+                } else {
+                    if( a[i] < left ){
+                        left = a[i];
+                    }
+                }
+            } // for
+
+            $('<img src="img/coverage/' + state + '.png" style="top: ' + $(this).attr('data-top') + '; left: ' + $(this).attr('data-left') + '; position: absolute;" id="' + state + '"  class="state" />').appendTo('#map');
+        } else {
+            $('img#' + state).show();
+        }
+    })
+    // .mouseout(function(){
+    //     $('.state').hide();
+    // });
+    $('.state').live('click',function(){
+        $('#coverage-info p').hide();
+        $('#coverage-info p[data-state=' + $(this).attr('id') + ']').show();
+    })
+
  });

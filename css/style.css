@@ -453,3 +453,7 @@ footer {
   #intellipanel-info ul{
     display: none;
   }
+
+#coverage-info p{
+  display: none;
+}
