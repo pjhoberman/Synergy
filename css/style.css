@@ -339,26 +339,87 @@ nav {
 }
 
 nav li {
-  color: #002A54;
-  margin: 25px 0;
-  padding: 5px;
-  width: 150px;
+  /*color: #002A54;*/
+  margin: 20px 0;
   cursor: pointer;
 }
 
-nav li:hover,
+nav li a {
+  display: block;
+  background: url("../img/icons/main_nav_sprite.png") no-repeat;
+  width: 257px;
+  height: 43px;
+  cursor: pointer;
+}
+
+nav li:hover, nav li a:hover{
+  cursor: pointer;
+}
+
+nav li a#nav_registration{
+  background-position: -15px -16px;
+}
+
+nav li a#nav_registration:hover{
+  background-position: -285px -16px;
+}
+
+nav li a#nav_products_and_services{
+  background-position: -15px -79px;
+}
+
+nav li a#nav_products_and_services:hover{
+  background-position: -285px -79px;
+}
+
+nav li a#nav_coverage_areas{
+  background-position: -15px -146px;
+}
+
+nav li a#nav_coverage_areas:hover{
+  background-position: -285px -146px;
+}
+
+nav li a#nav_quality_and_comliance{
+  background-position: -15px -208px;
+}
+
+nav li a#nav_quality_and_comliance:hover{
+  background-position: -285px -208px;
+}
+
+nav li a#nav_synergys_intellipanel{
+  background-position: -15px -274px;
+}
+
+nav li a#nav_synergys_intellipanel:hover{
+  background-position: -285px -274px;
+}
+
+nav li a#nav_contact{
+  background-position: -15px -339px;
+}
+
+nav li a#nav_contact:hover{
+  background-position: -285px -339px;
+}
+
+
+/*nav li:hover,
 nav li.active {
   background-color: #002954;
   color: white;
-}
+}*/
 
-nav li a,
+/*nav li a,
 nav li a:visited,
 nav li a:hover,
 nav li a:visited:hover {
   text-decoration: none;
   color: inherit;
 }
+*/
+
 
 #infobox, #main {
   border: 1px solid white;
@@ -366,10 +427,15 @@ nav li a:visited:hover {
   background-image: url("../img/bg_content.jpg");
   -webkit-box-shadow:  10px 10px 7px 2px rgba(0, 0, 0, .2);
   box-shadow:  10px 10px 7px 2px rgba(0, 0, 0, .2);
+  padding: 10px;
 }
   #infobox .info-header {
     font-style: italic;
     font-weight: bold;
+  }
+
+  #infobox .info-header img {
+    margin-right: 5px;
   }
 
   #infobox li {
@@ -377,6 +443,10 @@ nav li a:visited:hover {
     list-style: none;
   }
 
+  #infobox a {
+    text-decoration: none;
+    color: inherit;
+  }
 
 
 #main {
