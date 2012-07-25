@@ -301,18 +301,19 @@ td { vertical-align: top; }
 
 body {
   background: url("../img/bg.jpg") ;
-  color: #002A54;
+  color: #002a53;
   background-size:100% 100%;
   background-repeat:no-repeat;
 }
 
 header {
   width:1170px;
-  margin: 50px 0 20px;
+  margin: 40px 0 10px;
   /*margin: 0 auto;*/
   font-size: 12px;
   text-align: right;
   font-family: 'Karla', sans-serif;
+  color: #002A53;
 }
 
 .phone {
@@ -328,13 +329,13 @@ header {
 .email a:active {
 		font-weight:bold;
 		text-decoration:none;
-		color:#002954;
+		color:#002a53;
 	}
 		
 .email a:hover{
 		font-weight:bold;
 		text-decoration:none;
-		color:#002954;
+		color:#002a53;
 	}
 
 #left {
@@ -469,7 +470,7 @@ nav li a:visited:hover {
 
   #infobox a {
     text-decoration: none;
-    color: #002A54;
+    color: #002a53;
   }
   
   #infobox a:hover, a:active {
@@ -499,7 +500,7 @@ nav li a:visited:hover {
     margin: 50px;
     color: black;
     text-align: justify;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   #main #image-slider {
@@ -527,6 +528,7 @@ nav li a:visited:hover {
 		padding: 0 20px 0 22px;
 		border-left: solid 1px;
 		border-color:#FFF;
+		font-size:12px;
 		}
 
 .big-header, .header {display: block;}
@@ -571,8 +573,19 @@ p {
 
 span.read-more + p {display: none;}
 
+#intellipanel {
+	background-image:url(../img/intellipanel.png);
+	height:222px;
+	width:610px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	}
+
 #coverage {
-	margin: 0 0 0 0;
+	background-image:url(../img/expertise.png);
+	height: 53px;
+	width: 671px;
+	margin: 10px auto;
 	
 	}
 
