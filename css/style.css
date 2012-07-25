@@ -315,11 +315,15 @@ header {
 #left {
   width: 280px;
   float: left;
-  margin: 50px 0 0 75px;
+  margin: 0px 0 0 56px;
 }
 
 #logo {
+	background:url(../img/logo.jpg);
+	height:119px;
+	width:289px;
   cursor: pointer;
+  margin-left: -10px;
 }
   #logo span {
     text-transform: uppercase;
@@ -340,7 +344,7 @@ nav {
 
 nav li {
   /*color: #002A54;*/
-  margin: 20px 0;
+  margin: 20px 0 20px 5px;
   cursor: pointer;
 }
 
@@ -421,7 +425,35 @@ nav li a:visited:hover {
 */
 
 
-#infobox, #main {
+#infobox {
+  background-image: url(../img/subnav_bg.png) ;
+
+  height:252px;
+  width:278px;
+}
+	
+  #infobox li {
+    text-transform: uppercase;
+    list-style: none;
+  }
+  
+  #infobox ul {
+	 padding: 45px 0 0 70px; 
+	  }
+  
+
+  #infobox a {
+    text-decoration: none;
+    color: #002A54;
+  }
+  
+  #infobox a:hover, a:active {
+	  color: #300;
+	  text-decoration:none;
+	  font-weight:bold;
+	  }
+
+#main {
   border: 1px solid white;
   background-color: #BDAC9A;
   background-image: url("../img/bg_content.jpg");
@@ -429,25 +461,6 @@ nav li a:visited:hover {
   box-shadow:  10px 10px 7px 2px rgba(0, 0, 0, .2);
   padding: 10px;
 }
-  #infobox .info-header {
-    font-style: italic;
-    font-weight: bold;
-  }
-
-  #infobox .info-header img {
-    margin-right: 5px;
-  }
-
-  #infobox li {
-    text-transform: uppercase;
-    list-style: none;
-  }
-
-  #infobox a {
-    text-decoration: none;
-    color: inherit;
-  }
-
 
 #main {
   width: 710px;
@@ -482,6 +495,13 @@ nav li a:visited:hover {
       #main #image-slider .image-slider-button.active {
         background: url("../img/slider_btn_active.png") no-repeat;
       }
+
+	#secondary {
+		margin: 40px 0;
+		padding-left:22px;
+		border-left: solid 1px;
+		border-color:#FFF;
+		}
 
 .big-header, .header {display: block;}
 
