@@ -300,17 +300,25 @@ td { vertical-align: top; }
 /* SYNERGY STYLES START HERE */
 
 body {
-  background: url("../img/bg.jpg");
+  background: url("../img/bg.jpg") ;
   color: #002A54;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
 }
 
 header {
-  width:1190px;
-  margin: 50px 0 10px;
+  width:1170px;
+  margin: 50px 0 20px;
   /*margin: 0 auto;*/
-  font-size: 10px;
+  font-size: 12px;
   text-align: right;
+  font-family: 'Karla', sans-serif;
 }
+
+.phone span {
+	font-weight:bold;
+	padding-right: 20px;
+	}
 
 #left {
   width: 280px;
@@ -427,7 +435,7 @@ nav li a:visited:hover {
 
 #infobox {
   background-image: url(../img/subnav_bg.png) ;
-
+  font-family: 'karla', sans-serif;
   height:252px;
   width:278px;
 }
@@ -488,6 +496,7 @@ nav li a:visited:hover {
         height: 20px;
         width: 20px;
         float: left;
+		margin-top: 10px;
         background: url("../img/slider_btn_off.png") no-repeat;
         cursor: pointer;
       }
@@ -497,8 +506,8 @@ nav li a:visited:hover {
       }
 
 	#secondary {
-		margin: 40px 0;
-		padding-left:22px;
+		margin: 40px 0 40px 22px;
+		padding: 0 20px 0 22px;
 		border-left: solid 1px;
 		border-color:#FFF;
 		}
@@ -506,15 +515,20 @@ nav li a:visited:hover {
 .big-header, .header {display: block;}
 
 .big-header {
+  font-family: 'Caudex', serif;
   font-size: 35px;
-  font-style: italic;
+  font-weight: 700italic;
   color: #002a53;
+  font-style:italic;
 }
 
 .header {
+  font-family: 'Karla', sans-serif;
+  font-weight:700;
   color: #002a53;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 22px;
+  line-height: 90%;
 }
 
 p {
@@ -527,9 +541,23 @@ p {
   font-weight: bold;
   font-size: 10px;
   text-transform: uppercase;
+  text-decoration:none;
+}
+
+.read-more a#active {
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration:none;
 }
 
 span.read-more + p {display: none;}
+
+#coverage {
+	margin: 0 0 0 0;
+	
+	}
 
 footer {
   height: 50px;
