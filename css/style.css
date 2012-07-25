@@ -315,9 +315,26 @@ header {
   font-family: 'Karla', sans-serif;
 }
 
-.phone span {
+.phone {
 	font-weight:bold;
 	padding-right: 20px;
+	}
+	
+.fax {
+	font-weight:bold;
+	padding-right: 20px;
+	}
+	
+.email a:active {
+		font-weight:bold;
+		text-decoration:none;
+		color:#002954;
+	}
+		
+.email a:hover{
+		font-weight:bold;
+		text-decoration:none;
+		color:#002954;
 	}
 
 #left {
