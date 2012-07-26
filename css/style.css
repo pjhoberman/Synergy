@@ -316,6 +316,15 @@ header {
   color: #002A53;
 }
 
+header a {
+	text-decoration:none;
+	font-size: 12px;
+	font-weight:900;
+    text-align: right;
+    font-family: 'Karla', sans-serif;
+    color: #002A53;
+	}
+
 .phone {
 	font-weight:bold;
 	padding-right: 20px;
@@ -478,6 +487,9 @@ nav li a:visited:hover {
 	  text-decoration:none;
 	  font-weight:bold;
 	  }
+  .infobreak {
+	  height:40px;
+	  }
 
 #main {
   border: 1px solid white;
@@ -485,7 +497,7 @@ nav li a:visited:hover {
   background-image: url("../img/bg_content.jpg");
   -webkit-box-shadow:  10px 10px 7px 2px rgba(0, 0, 0, .2);
   box-shadow:  10px 10px 7px 2px rgba(0, 0, 0, .2);
-  padding: 10px;
+  padding:;
 }
 
 #main {
@@ -499,14 +511,15 @@ nav li a:visited:hover {
     padding: 15px;
     margin: 50px;
     color: black;
+	font-family: 'Karla', sans-serif;
     text-align: justify;
     font-size: 12px;
   }
 
-  #main #image-slider {
-
+#main #image-slider {
   }
-    #main #image-slider .image-slider-buttons {
+
+#main #image-slider .image-slider-buttons {
       float: right;
     }
 
@@ -529,6 +542,8 @@ nav li a:visited:hover {
 		border-left: solid 1px;
 		border-color:#FFF;
 		font-size:12px;
+		font-family: 'Karla', sans-serif;
+		text-align: justify;
 		}
 
 .big-header, .header {display: block;}
@@ -563,7 +578,7 @@ p {
   text-decoration:none;
 }
 
-.read-more a#active {
+.read-more a:active {
   color: white;
   font-weight: bold;
   font-size: 10px;
@@ -586,7 +601,6 @@ span.read-more + p {display: none;}
 	height: 53px;
 	width: 671px;
 	margin: 10px auto;
-	
 	}
 
 footer {
@@ -595,13 +609,139 @@ footer {
 }
 
 #intellipanel-info {
-
 }
 
-  #intellipanel-info ul{
+#intellipanel-info ul{
     display: none;
   }
 
 #coverage-info p{
   display: none;
 }
+
+#interior {
+  border: 1px solid white;
+  background-color: #BDAC9A;
+  background-image: url("../img/bg_content.jpg");
+  -webkit-box-shadow:  10px 10px 7px 2px rgba(0, 0, 0, .2);
+  box-shadow:  10px 10px 7px 2px rgba(0, 0, 0, .2);
+  padding: 0 0 0 0;
+}
+
+#interior {
+  width: 710px;
+  float: left;
+  margin-left: 75px;
+  padding:25px;
+}
+  
+#interior .content {
+    background-color: white;
+    margin: 30px 22px 40px 22px;
+	padding: 10px 22px 10px 22px;
+    color: black;
+	font-family: 'Karla', sans-serif;
+    text-align: justify;
+    font-size: 12px;
+  }
+  
+  #interior .content2 {
+    background-color: white;
+    margin: 20px 22px 40px 22px;
+	padding: 10px 22px 10px 22px;
+    color: black;
+	font-family: 'Karla', sans-serif;
+    text-align: justify;
+    font-size: 12px;
+  }
+  #interior .content3 {
+    background-color: white;
+    margin: 0 22px 0 22px;
+	padding: 0 22px 0 22px;
+    color: black;
+	font-family: 'Karla', sans-serif;
+    text-align: justify;
+    font-size: 12px;
+  }
+
+#spacer {
+	width:500px;
+	height: 3px;
+	margin: 0 auto;
+	border-top:1px solid white;
+	}
+
+h1 {
+  font-family: 'Karla', sans-serif;
+  font-weight:700;
+  color: #002a53;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 100%;
+  padding: 15px 0 0 22px;
+  letter-spacing:1px;
+	}
+
+.italics {
+  font-family: 'Karla', sans-serif;
+  font-style:italic;
+  font-weight:700;
+  color: #002a53;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 100%;
+	}
+	
+.subhead {
+	text-transform:uppercase;
+	color:#002a53;
+	}
+
+h2 {
+	font-family: 'Karla', sans-serif;
+  font-weight:700;
+  color: #FFF;
+  font-size: 36px;
+  line-height: 0%;
+  padding-left: 22px;
+  }
+
+h4 {
+  font-family: 'Karla', sans-serif;
+  font-weight:700;
+  color: #FFF;
+  font-size: 36px;
+  line-height: 0%;
+  padding-left: 22px;}
+
+
+h3 {
+	font-family: 'Karla', sans-serif;
+  font-weight:700;
+  color: #002a53;
+  font-size: 20px;
+  line-height: 100%;
+  font-style:italic;
+  text-align:center;
+	}
+	
+h5 {
+  font-family: 'Karla', sans-serif;
+  font-weight:700;
+  color: #002a53;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 100%;
+  padding: 15px 0 0 0;
+	}
+	
+.topcontact {
+	height:90px;
+	}
+	
+#email {
+	float:left;
+	width: 60%;
+	height:90px;
+	
+	}
