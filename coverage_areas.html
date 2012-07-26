@@ -78,7 +78,7 @@
   <div role="main" id="main">
     <div id="map" style="position: relative;">
 
-      <img src="file:///Users/pjhoberman/Dropbox/Synergy%20website/site/img/coverage/_us_coverage.png" id="coverage_map"/>
+      <img src="http://storage.pjhoberman.com/Synergy/img/coverage/_us_coverage.png" id="coverage_map"/>
 
       <div id="coverage-info" style="display: none;">
         Info goes here
@@ -114,11 +114,11 @@
     $(document).ready(function(){
       $('#coverage_map').hover(
         function(){
-          $(this).attr('src', 'file:///Users/pjhoberman/Dropbox/Synergy%20website/site/img/coverage/_us_coverage.over.png');
+          $(this).attr('src', 'http://storage.pjhoberman.com/Synergy/img/coverage/_us_coverage.over.png');
           $('#coverage-info').show();
         },
         function(){
-          $(this).attr('src', 'file:///Users/pjhoberman/Dropbox/Synergy%20website/site/img/coverage/_us_coverage.png');
+          $(this).attr('src', 'http://storage.pjhoberman.com/Synergy/img/coverage/_us_coverage.png');
           $('#coverage-info').hide();
         }
         );
