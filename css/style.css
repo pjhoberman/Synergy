@@ -329,18 +329,18 @@ header a {
 	font-weight:bold;
 	padding-right: 20px;
 	}
-	
+
 .fax {
 	font-weight:bold;
 	padding-right: 20px;
 	}
-	
+
 .email a:active {
 		font-weight:bold;
 		text-decoration:none;
 		color:#002a53;
 	}
-		
+
 .email a:hover{
 		font-weight:bold;
 		text-decoration:none;
@@ -466,22 +466,22 @@ nav li a:visited:hover {
   height:252px;
   width:278px;
 }
-	
+
   #infobox li {
     text-transform: uppercase;
     list-style: none;
   }
-  
+
   #infobox ul {
-	 padding: 45px 0 0 70px; 
+	 padding: 45px 0 0 70px;
 	  }
-  
+
 
   #infobox a {
     text-decoration: none;
     color: #002a53;
   }
-  
+
   #infobox a:hover, a:active {
 	  color: #300;
 	  text-decoration:none;
@@ -490,7 +490,9 @@ nav li a:visited:hover {
   .infobreak {
 	  height:40px;
 	  }
-
+#philosophy {
+  margin-top: 50px;
+}
 #main {
   border: 1px solid white;
   background-color: #BDAC9A;
@@ -570,6 +572,8 @@ p {
   font-size: 13px;
 }
 
+#nav_quality_and_comliance, #nav_quality_and_comliance {text-decoration: none;}
+
 .read-more {
   color: white;
   font-weight: bold;
@@ -634,7 +638,7 @@ footer {
   margin-left: 75px;
   padding:25px;
 }
-  
+
 #interior .content {
     background-color: white;
     margin: 30px 22px 40px 22px;
@@ -644,7 +648,7 @@ footer {
     text-align: justify;
     font-size: 12px;
   }
-  
+
   #interior .content2 {
     background-color: white;
     margin: 20px 22px 40px 22px;
@@ -691,7 +695,7 @@ h1 {
   font-size: 22px;
   line-height: 100%;
 	}
-	
+
 .subhead {
 	text-transform:uppercase;
 	color:#002a53;
@@ -724,7 +728,7 @@ h3 {
   font-style:italic;
   text-align:center;
 	}
-	
+
 h5 {
   font-family: 'Karla', sans-serif;
   font-weight:700;
@@ -734,14 +738,124 @@ h5 {
   line-height: 100%;
   padding: 15px 0 0 0;
 	}
-	
+
 .topcontact {
 	height:90px;
 	}
-	
+
 #email {
 	float:left;
-	width: 60%;
+	width: 65%;
 	height:90px;
+    font-family: 'Karla', sans-serif;
+	font-size: 26px;
+	color:#000;
+	font-weight:900;
+	}
+#email a {
+	text-decoration: none;
+	font-family: 'Karla', sans-serif;
+	font-size: 26px;
+	color:#000;
+	font-weight:900;
+	}
+
+.subhead2 {
+	text-transform:uppercase;
+	color:#002a53;
+	font-size:12px;
+	}
+.subhead3 {
+	text-transform:uppercase;
+	color:#000;
+	font-size:12px;
+	line-height:20%;
+	}
+
+#phone {
+	float:right;
+	height:90px;
+    font-family: 'Karla', sans-serif;
+	font-size: 26px;
+	color:#000;
+	font-weight:900;
+	border-left:solid 1px #002a53;
+	padding-left:15px;
+	}
+#address {
+	height: 340px;
+	margin-top:15px;
+	border-top:solid 1px #002a53;
+	}
 	
+#colorado {
+	width: 33%;
+	float:left;
+	color:#000;
+	font-size:22px;
+	text-transform:uppercase;
+	text-align:left;
+	font-family:'Karla', sans-serif;
+	font-weight:900;
+	line-height:80%;
+	padding-top:30px;
+	}
+
+#denvermap {
+	background-image:url(../img/denvermap.png);
+	height:125px;
+	width:163px;
+	margin-top:20px;
+	margin-bottom:20px;
+	}
+
+#westmi {
+	width: 33%;
+	float:left;
+	color:#000;
+	font-size:22px;
+	text-transform:uppercase;
+	text-align:left;
+	font-family:'Karla', sans-serif;
+	font-weight:900;
+	line-height:80%;
+	padding-top:30px;
+	}
+
+#grmap {
+	background-image:url(../img/grmap.png);
+	height:125px;
+	width:160px;
+	margin-top:20px;
+	margin-bottom:20px;
+	}	
+
+#eastmi {
+	width: 33%;
+	float:left;
+	color:#000;
+	font-size:22px;
+	text-transform:uppercase;
+	text-align:left;
+	font-family:'Karla', sans-serif;
+	font-weight:900;
+	line-height:80%;
+	padding-top:30px;
+	}
+
+#troymap {
+	background-image:url(../img/troymap.png);
+	height:125px;
+	width:160px;
+	margin-top:20px;
+	margin-bottom:20px;
+	}
+		
+.address2 {
+	font-family: 'Karla', sans-serif;
+	font-style: italic;
+	font-size:14px;
+	font-weight:400;
+	text-transform:none;
+	line-height:100%;
 	}
