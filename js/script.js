@@ -1,5 +1,5 @@
 /* Site variables - change these to whatever you want */
-var slide_delay = 3; // this is in seconds;
+var slide_delay = 7; // this is in seconds;
 
 /* Edit below this line with caution */
 
@@ -8,8 +8,8 @@ var current_slide = 1,
 
 function setActiveNav(page){
     if( page !== '' ){
-        $('nav li.active').removeClass('active');
-        $('nav li a[href*=' + page + ']').parent().addClass('active');
+        $('nav li a.active').removeClass('active');
+        $('nav li a[href*=' + page + ']').addClass('active');
     }
 }
 

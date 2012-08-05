@@ -363,12 +363,21 @@ header a:hover {
 }
 
 #logo {
-	background:url(../img/logo.jpg);
+	background:url(../img/s_logo.jpg);
 	height:119px;
 	width:289px;
   cursor: pointer;
   margin-left: -10px;
 }
+
+#logo :hover {
+	background:url(../img/s_logo2.jpg);
+	height:119px;
+	width:289px;
+  cursor: pointer;
+  margin-left: -10px;
+}
+
   #logo span {
     text-transform: uppercase;
     font-size: 48px;
@@ -408,7 +417,8 @@ nav li a#nav_registration{
   background-position: -15px -16px;
 }
 
-nav li a#nav_registration:hover{
+nav li a#nav_registration:hover,
+nav li a#nav_registration.active{
   background-position: -285px -16px;
 }
 
@@ -416,7 +426,8 @@ nav li a#nav_products_and_services{
   background-position: -15px -79px;
 }
 
-nav li a#nav_products_and_services:hover{
+nav li a#nav_products_and_services:hover,
+nav li a#nav_products_and_services.active{
   background-position: -285px -79px;
 }
 
@@ -424,7 +435,8 @@ nav li a#nav_coverage_areas{
   background-position: -15px -146px;
 }
 
-nav li a#nav_coverage_areas:hover{
+nav li a#nav_coverage_areas:hover,
+nav li a#nav_coverage_areas.active{
   background-position: -285px -146px;
 }
 
@@ -432,7 +444,8 @@ nav li a#nav_quality_and_comliance{
   background-position: -15px -208px;
 }
 
-nav li a#nav_quality_and_comliance:hover{
+nav li a#nav_quality_and_comliance:hover,
+nav li a#nav_quality_and_comliance.active{
   background-position: -285px -208px;
 }
 
@@ -440,7 +453,8 @@ nav li a#nav_synergys_intellipanel{
   background-position: -15px -274px;
 }
 
-nav li a#nav_synergys_intellipanel:hover{
+nav li a#nav_synergys_intellipanel:hover,
+nav li a#nav_synergys_intellipanel.active{
   background-position: -285px -274px;
 }
 
@@ -448,10 +462,14 @@ nav li a#nav_contact{
   background-position: -15px -339px;
 }
 
-nav li a#nav_contact:hover{
+nav li a#nav_contact:hover,
+nav li a#nav_contact.active{
   background-position: -285px -339px;
 }
 
+nav_contact a.active {
+	  background-position: -285px -339px;
+	}
 
 /*nav li:hover,
 nav li.active {
@@ -500,6 +518,11 @@ nav li a:visited:hover {
 #philosophy {
   margin-top: 53px;
 }
+
+#our_team a.active {
+
+	}
+
 #main {
   border: 1px solid white;
   background-color: #BDAC9A;
@@ -587,14 +610,17 @@ p {
   font-size: 10px;
   text-transform: uppercase;
   text-decoration:none;
+  font-family: 'Karla', sans-serif;
 }
 
 .read-more a:active {
   color: #002a53;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 10px;
   text-transform: uppercase;
   text-decoration:none;
+    font-family: 'Karla', sans-serif;
+
 }
 
 .read-more.team {
@@ -604,6 +630,15 @@ p {
   text-transform: uppercase;
   text-decoration:none;
   margin-left: 10px;
+  margin-top:-20px;
+  font-family: 'Karla', sans-serif;
+  cursor:pointer;
+
+}
+
+.read-more.team.bottom{
+  display: block;
+  margin-top: -10px;
 }
 
 .read-more.team a:active {
@@ -613,7 +648,9 @@ p {
   text-transform: uppercase;
   text-decoration:none;
   margin-left: 10px;
-
+  margin-top:-20px;
+    font-family: 'Karla', sans-serif;
+	  cursor:pointer;
 }
 
 span.read-more + p {display: none;}
@@ -632,6 +669,12 @@ span.read-more + p {display: none;}
 	width: 671px;
 	margin: 10px auto;
 	}
+#coverage2 {
+	background-image:url(../img/expertise.png);
+	height: 53px;
+	width: 671px;
+	margin: 40px auto;
+	}
 
 footer {
   height: 50px;
@@ -639,15 +682,123 @@ footer {
 }
 
 #intellipanel-info {
+	margin: 20px auto;
 }
+
+#recruiting-appraisers {
+	margin-left:120px;
+	}
+
+#qualifying-appraisers{
+	margin-left:120px;
+	}
+
+#recordkeeping {
+	margin-left:120px;
+	}
+
+#order-management {
+	margin-left:120px;
+	}
+
+#support-and-training {
+	margin-left:120px;
+	}
+
+#compensation {
+	margin-left:120px;
+	}
 
 #intellipanel-info ul{
     display: none;
+
   }
+
+#intellipanel-table {
+	margin: 0 auto;
+	cursor: pointer;
+
+	}
+#intellipanel-table {
+	}
+
+#intellipanel-top-row {
+	background-color:#002a53;
+	color:#fff;
+	text-transform:uppercase;
+	font-family: 'Karla', sans-serif;
+	font-weight:900;
+	font-size:16px;
+	width: 500px;
+	}
+
+#intellipanel-middle-left {
+	background-color:#586a8d;
+	color:#fff;
+	font-family: 'Karla', sans-serif;
+	font-weight:900;
+	font-style:italic;
+	font-size:12px;
+	}
+
+#intellipanel-bottom-left {
+	background-color:#586a8d;
+	color:#fff;
+	font-family: 'Karla', sans-serif;
+	font-weight:900;
+	font-style:italic;
+	font-size:12px;
+	}
+
+#intellipanel-middle-middle {
+	background-color:#394969;
+	color:#fff;
+	font-family: 'Karla', sans-serif;
+	font-weight:900;
+	font-style:italic;
+	font-size:12px;
+	}
+
+#intellipanel-bottom-middle {
+	background-color:#394969;
+	color:#fff;
+	font-family: 'Karla', sans-serif;
+	font-weight:900;
+	font-style:italic;
+	font-size:12px;
+	}
+
+#intellipanel-middle-right {
+	background-color:#002a53;
+	color:#fff;
+	font-family: 'Karla', sans-serif;
+	font-weight:900;
+	font-style:italic;
+	font-size:12px;
+	}
+
+#intellipanel-bottom-right {
+	background-color:#002a53;
+	color:#fff;
+	font-family: 'Karla', sans-serif;
+	font-weight:900;
+	font-style:italic;
+	font-size:12px;
+	}
 
 #coverage-info p{
   display: none;
 }
+
+#coverage-info .states {
+	background-color: #FFF;
+	margin: 10px 22px 20px 22px;
+	padding: 20px 22px 20px 22px;
+    color: black;
+	font-family: 'Karla', sans-serif;
+    text-align: justify;
+    font-size: 12px;
+	}
 
 #interior {
   border: 1px solid white;
@@ -706,10 +857,28 @@ footer {
 	font-style:italic;
   }
 
+  #interior .content5 {
+    background-color: white;
+    margin: -15px 22px 40px 22px;
+	padding: 10px 22px 10px 22px;
+    color: black;
+	font-family: 'Karla', sans-serif;
+    text-align: justify;
+    font-size: 12px;
+  }
+
 #spacer {
 	width:500px;
 	height: 3px;
 	margin: 0 auto;
+	border-top:1px solid white;
+	}
+
+#spacer2 {
+	width:500px;
+	height: 3px;
+	margin: 0 auto;
+	padding-bottom:15px;
 	border-top:1px solid white;
 	}
 
@@ -766,7 +935,10 @@ h4 {
   color: #FFF;
   font-size: 36px;
   line-height: 0%;
-  padding-left: 22px;}
+  padding-left: 22px;
+  text-shadow: 1px 2px  #002a53;
+
+  }
 
 
 h3 {
@@ -797,7 +969,62 @@ h6 {
   font-size: 22px;
   line-height: 100%;
   margin: 10px 0;
+  text-align:left;
 	}
+
+h6 a{
+	text-decoration:none;
+	font-size:12px;
+	font-weight:400;
+	color:#002a53;
+	margin-left: 20px;
+	}
+
+h6 a:hover{
+	text-decoration:underline;
+	font-size:12px;
+	font-weight:400;
+	color:#002a53;
+	margin-left: 20px;
+	}
+
+h7 {
+  font-family: 'Karla', sans-serif;
+  font-weight:400;
+  color: #002a53;
+  font-size: 12px;
+  font-style:italic;
+  text-align:center;
+  margin-bottom:20px;
+	}
+
+h7 a{
+	text-decoration:none;
+	font-size:12px;
+	font-weight:400;
+	color:#002a53;
+	margin-left: 20px;
+	}
+
+h7 a:hover{
+	text-decoration:underline;
+	font-size:12px;
+	font-weight:400;
+	color:#002a53;
+	margin-left: 20px;
+	}
+
+h8 {
+  font-family: 'Karla', sans-serif;
+  font-weight:900;
+  color: #002a53;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 100%;
+  text-align:left;
+  padding-right: 15px;
+}
+
 
 .topcontact {
 	height:90px;
@@ -808,18 +1035,23 @@ h6 {
 	float:left;
 	width: 60%;
 	height:90px;
-    font-family: 'Karla', sans-serif;
+  font-family: 'Karla', sans-serif;
 	font-size: 26px;
 	color:#000;
 	font-weight:900;
-vertical-align:text-top;
+  vertical-align:text-top;
+  display: block;
+  margin-top: -5px;
 	}
+
 #email a {
 	text-decoration: none;
 	font-family: 'Karla', sans-serif;
 	font-size: 22px;
 	color:#000;
 	font-weight:900;
+  display:block;
+  margin-top: -3px;
 	}
 
 .subhead2 {
@@ -833,6 +1065,12 @@ vertical-align:text-top;
 	font-size:12px;
 	line-height:100%;
 	}
+.subhead4 {
+	text-transform:uppercase;
+	color:#002a53;
+	font-weight:900;
+	font-size:14px;
+	}
 
 #phone {
 	float:right;
@@ -845,6 +1083,11 @@ vertical-align:text-top;
 	border-left:solid 1px #002a53;
 	padding-left:15px;
 	}
+
+  #phone .subhead3 {
+    display: block;
+    margin-top: 5px;
+  }
 #address {
 	height: 360px;
 	margin-top:15px;
@@ -921,7 +1164,7 @@ vertical-align:text-top;
 .address2 {
 	font-family: 'Karla', sans-serif;
 	font-style: italic;
-	font-size:14px;
+	font-size:16px;
 	font-weight:400;
 	text-transform:none;
 	line-height:100%;
@@ -936,6 +1179,12 @@ vertical-align:text-top;
 	font-size:10px;
 	}
 
+#service1 .indent {
+	margin-left:35px;
+    line-height:60%;
+	margin-bottom: 10px;
+	}
+
 #service2 p {
 	font-family:'Karla', sans-serif;
 	width: 45%;
@@ -943,6 +1192,16 @@ vertical-align:text-top;
 	text-align:left;
 	margin:15px 0 20px 20px;
 	font-size:10px;
+	}
+
+#service2 .indent {
+	margin-left:35px;
+    line-height:60%;
+	}
+
+#service2 .indent2 {
+	margin-left:45px;
+    line-height:60%;
 	}
 
 .boldnumber {
@@ -953,12 +1212,12 @@ vertical-align:text-top;
 	padding-right:7px;
 	}
 
-
 #family {
 	height:400px;
-	width:100%;
+	width:620px;
 	margin-bottom:30px;
 	}
+
 #family ul {
 		list-style:none;
 	}
@@ -968,16 +1227,38 @@ vertical-align:text-top;
   background: url(../img/fam_sprite.jpg) no-repeat;
 }
 
+#family .left {
+	width:300px;
+	height:280px;
+	float:left;
+	margin-left:-30px;
+	margin-top:20px;
+	}
+
 #family .left li a {
 	float:left;
 	/*width:300px;*/
   height: 110px;
 	}
 
+#family .right {
+	width:290px;
+	height:280px;
+	float:left;
+	margin-top:20px;
+	}
+
 #family .right li a {
 	list-style:none;
-	float:right;
+	float:left;
 	/*width:300px;*/
+	}
+
+#family .bottom {
+	width:450px;
+	height:91px;
+	margin:0 0 0 50px;
+	float:left;
 	}
 
 #family .bottom li a {
@@ -985,53 +1266,53 @@ vertical-align:text-top;
 	}
 
 #mifha a{
-  width: 249px;
+  width: 290px;
   height: 110px;
   background-position: 0px 0px;
 }
 
 #mifha a:hover{
-  background-position: -200px 0px ;
-}
-
-/* for each of these, change the width, height, and bg position. I'm just setting up the code to be easy */
-
-#micu a{
-	width:40%; /* use px instead of % in case the screen size changes */
-	height: 110px;
-  background-position: 0px 0px;
-	}
-
-#micu a:hover {
-  background-position: 0px 0px;
+  background-position: -290px 0px ;
 }
 
 #cocu a {
-  width: 249px;
-  height: 110px;
-  background-position: 0px 0px;
+  width: 270px;
+  height: 100px;
+  background-position: 0px -110px;
+  margin-top:30px;
 	}
 
 #cocu a:hover {
-  background-position: 0px 0px;
+  background-position: -270px -110px;
+}
+
+#micu a {
+  width:270px;
+  height: 103px;
+  background-position: 0px -210px;
+	}
+
+#micu a:hover {
+  background-position: -270px -210px;
 }
 
 #coval a {
-	width: 249px;
-  height: 110px;
-  background-position: 0px 0px;
+  width: 290px;
+  height: 87px;
+  background-position: 0px -313px;
+  margin-top:45px;
 	}
 
 #coval a:hover {
-  background-position: 0px 0px;
+  background-position: -290px -313px;
 }
 
 #mfdr a{
-	width: 249px;
-  height: 110px;
-  background-position: 0px 0px;
+	width: 444px;
+  height: 91px;
+  background-position: 0px -400px;
 	}
 
 #mfdr a:hover {
-  background-position: 0px 0px;
+  background-position: -444px -400px;
 }
