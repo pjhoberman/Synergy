@@ -533,10 +533,9 @@ nav li a:visited:hover {
 }
 
 #main {
-  width: 710px;
+  width: 759px;
   float: left;
   margin-left: 75px;
-  padding: 25px;
 }
   #main .content {
     background-color: white;
@@ -549,6 +548,9 @@ nav li a:visited:hover {
   }
 
 #main #image-slider {
+	margin: 25px 25px 0 25px;
+	height: 359px;
+	width: 709px;
   }
 
 #main #image-slider .image-slider-buttons {
@@ -674,6 +676,14 @@ span.read-more + p {display: none;}
 	height: 53px;
 	width: 671px;
 	margin: 40px auto;
+	}
+
+#indexfoot {
+	background-image:url(../img/states_indexbg.png) ;
+	height:323px;
+	width: 749px;
+	margin: 0 auto;
+	align: bottom;
 	}
 
 footer {
