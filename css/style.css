@@ -756,71 +756,61 @@ footer {
 #intellipanel-table {
 	margin: 0 auto;
 	cursor: pointer;
+  /*border-collapse: collapse;*/
+	}
 
-	}
-#intellipanel-table {
-	}
+#intellipanel-table td {
+  border: 1px solid white;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+}
+
+@-moz-document url-prefix() {
+    #intellipanel-table td {
+        font-weight: normal;
+    }
+}
 
 #intellipanel-top-row {
 	background-color:#002a53;
-	color:#fff;
 	text-transform:uppercase;
-	font-family: 'Karla', sans-serif;
-	font-weight:900;
 	font-size:16px;
-	width: 500px;
+	width: 600px;
 	}
 
 #intellipanel-middle-left {
 	background-color:#586a8d;
-	color:#fff;
-	font-family: 'Karla', sans-serif;
-	font-weight:900;
 	font-style:italic;
 	font-size:12px;
 	}
 
 #intellipanel-bottom-left {
 	background-color:#586a8d;
-	color:#fff;
-	font-family: 'Karla', sans-serif;
-	font-weight:900;
 	font-style:italic;
 	font-size:12px;
 	}
 
 #intellipanel-middle-middle {
 	background-color:#394969;
-	color:#fff;
-	font-family: 'Karla', sans-serif;
-	font-weight:900;
 	font-style:italic;
 	font-size:12px;
 	}
 
 #intellipanel-bottom-middle {
 	background-color:#394969;
-	color:#fff;
-	font-family: 'Karla', sans-serif;
-	font-weight:900;
 	font-style:italic;
 	font-size:12px;
 	}
 
 #intellipanel-middle-right {
 	background-color:#002a53;
-	color:#fff;
-	font-family: 'Karla', sans-serif;
-	font-weight:900;
 	font-style:italic;
 	font-size:12px;
 	}
 
 #intellipanel-bottom-right {
 	background-color:#002a53;
-	color:#fff;
-	font-family: 'Karla', sans-serif;
-	font-weight:900;
 	font-style:italic;
 	font-size:12px;
 	}
