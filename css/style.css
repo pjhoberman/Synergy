@@ -304,6 +304,7 @@ body {
   color: #002a53;
   background-size:100% 100%;
   background-repeat:no-repeat;
+  width: 1180px;
 }
 
 header {
@@ -681,29 +682,29 @@ span.read-more + p {display: none;}
 	width: 671px;
 	margin: 40px auto;
 	}
-	
+
 #coverage3 {
 	background-image:url(../img/expertise2.png);
 	background-repeat:no-repeat;
 	height: 48px;
 	width: 622px;
 	margin-left:22px;
-	
+
 	}
 	#coverage4 {
 	background-image:url(../img/expertise2.png);
 	background-repeat:no-repeat;
 	height: 48px;
 	width: 622px;
-    margin:40px auto;	
+    margin:40px auto;
 	}
-		
+
 #expertfoot {
 	margin-left:47px;
 	border-left: solid 1px;
 	border-color:#FFF;
 	width: 644px;
-	}	
+	}
 
 #indexfoot {
 	background-image:url(../img/states_indexbg.png);
@@ -863,7 +864,7 @@ footer {
     text-align: justify;
     font-size: 12px;
   }
-  
+
   #interior .content a {
 	 text-decoration:none;
 	 color:#002a53;
