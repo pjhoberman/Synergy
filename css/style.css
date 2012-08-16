@@ -1061,6 +1061,19 @@ h8 {
   padding-right: 15px;
 }
 
+h9 {
+  font-family: 'Karla', sans-serif;
+  font-weight:400;
+  color: #000;
+  font-size: 12px;
+  font-style:italic;
+  text-align:left;
+	}
+	
+.bolder {
+	font-weight:900;
+	text-transform:none;
+	}	
 
 .topcontact {
 	height:90px;
