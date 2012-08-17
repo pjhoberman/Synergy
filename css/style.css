@@ -444,12 +444,12 @@ nav li a#nav_coverage_areas.active{
   background-position: -285px -146px;
 }
 
-nav li a#nav_quality_and_comliance{
+nav li a#nav_quality_and_compliance{
   background-position: -15px -208px;
 }
 
-nav li a#nav_quality_and_comliance:hover,
-nav li a#nav_quality_and_comliance.active{
+nav li a#nav_quality_and_compliance:hover,
+nav li a#nav_quality_and_compliance.active{
   background-position: -285px -208px;
 }
 
@@ -609,7 +609,7 @@ p {
   font-size: 13px;
 }
 
-#nav_quality_and_comliance, #nav_quality_and_comliance {text-decoration: none;}
+#nav_quality_and_compliance, #nav_quality_and_compliance {text-decoration: none;}
 
 .read-more {
   color: white;
@@ -629,6 +629,10 @@ p {
     font-family: 'Karla', sans-serif;
 
 }
+
+.read-more a {
+	text-decoration:none;
+	}
 
 .read-more.team {
   color: #002a53;
