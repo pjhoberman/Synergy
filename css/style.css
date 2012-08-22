@@ -299,12 +299,29 @@ td { vertical-align: top; }
 
 /* SYNERGY STYLES START HERE */
 
+.vignette {
+	-webkit-box-shadow: inset 0px 0px 85px rgba(0,0,0,0.4);
+	-moz-box-shadow:    inset 0px 0px 85px rgba(0,0,0,0.4);
+	box-shadow:         inset 0px 0px 85px rgba(0,0,0,0.4);
+	
+	line-height: 0;         /* ensure no space between bottom */
+		
+	display: inline-block;  /* don't go wider than image */
+}
+.vignette img {
+	position: relative; 
+	z-index: -1;            /* position beneath */
+}
+
 body {
-  background: url("../img/bg.jpg") ;
+  background: url("../img/whitey.png") ;
   color: #002a53;
-  background-size:100% 100%;
-  background-repeat:no-repeat;
-  width: 1180px;
+  min-width: 1180px;
+  background-size: 100% 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header {
@@ -407,7 +424,7 @@ nav li {
 
 nav li a {
   display: block;
-  background: url("../img/icons/main_nav_sprite.png") no-repeat;
+  background: url(../img/main_nav_sprite.png);
   width: 257px;
   height: 43px;
   cursor: pointer;
@@ -538,6 +555,7 @@ nav li a:visited:hover {
 
 #main {
   width: 759px;
+  min-height: 720px;
   float: left;
   margin-left: 75px;
 }
@@ -573,6 +591,10 @@ nav li a:visited:hover {
       #main #image-slider .image-slider-button.active {
         background: url("../img/slider_btn_active.png") no-repeat;
       }
+
+.coveragehead {
+	margin-left:25px;
+	}
 
 	#secondary {
 		margin: 40px 0 40px 47px;
@@ -833,6 +855,10 @@ footer {
     font-size: 12px;
 	}
 
+#invisibox {
+	min-height: 900px;
+	}
+
 #interior {
   border: 1px solid white;
   background-color: #BDAC9A;
@@ -844,6 +870,7 @@ footer {
 
 #interior {
   width: 710px;
+  min-height: 720px;
   float: left;
   margin-left: 75px;
   padding:25px;
@@ -1155,7 +1182,7 @@ h9 {
 	text-transform:uppercase;
 	text-align:left;
 	font-family:'Karla', sans-serif;
-	font-weight:900;
+	font-weight:700;
 	line-height:90%;
 	padding-top:30px;
 	margin-right:15px;
@@ -1178,7 +1205,7 @@ h9 {
 	text-transform:uppercase;
 	text-align:left;
 	font-family:'Karla', sans-serif;
-	font-weight:900;
+	font-weight:700;
 	line-height:90%;
 	padding-top:30px;
 	margin-right:15px;
@@ -1195,13 +1222,13 @@ h9 {
 
 #eastmi {
 	width: 30%;
-	float:left;
+	float:right;
 	color:#000;
 	font-size:28px;
 	text-transform:uppercase;
 	text-align:left;
 	font-family:'Karla', sans-serif;
-	font-weight:900;
+	font-weight:700;
 	line-height:90%;
 	padding-top:30px;
 	}
@@ -1209,7 +1236,7 @@ h9 {
 #troymap {
 	background-image:url(../img/troymap.png);
 	height:125px;
-	width:160px;
+	width:158px;
 	margin-top:20px;
 	margin-bottom:10px;
 	}
@@ -1217,7 +1244,7 @@ h9 {
 .address2 {
 	font-family: 'Karla', sans-serif;
 	font-style: italic;
-	font-size:16px;
+	font-size:15px;
 	font-weight:400;
 	text-transform:none;
 	line-height:100%;
